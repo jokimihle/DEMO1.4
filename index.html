@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOC50</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+
+    <!-- ─── Fixer globaler Page-Counter oben links ─────────────────────────── -->
+    <div id="pageLabel">
+      <div id="pageLabelTrack">
+        <div class="page-label-item" data-section="intro">
+          <span class="pl-num">01</span>
+          <span class="pl-sep">/</span>
+          <span class="pl-name">Home</span>
+        </div>
+        <div class="page-label-item" data-section="spotlight">
+          <span class="pl-num">02</span>
+          <span class="pl-sep">/</span>
+          <span class="pl-name">Events</span>
+        </div>
+        <div class="page-label-item" data-section="location">
+          <span class="pl-num">03</span>
+          <span class="pl-sep">/</span>
+          <span class="pl-name">Location</span>
+        </div>
+        <div class="page-label-item" data-section="footer">
+          <span class="pl-num">04</span>
+          <span class="pl-sep">/</span>
+          <span class="pl-name">Info</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Burger ──────────────────────────────────────────────────────────── -->
+    <div class="item">
+      <button class="menu-trigger" id="menu04">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- ─── Navbar ──────────────────────────────────────────────────────────── -->
+    <nav id="Navbar">
+      <div id="navWrapper">
+        <div class="nav-bg-label">DOC50</div>
+        <div class="nav-meta">
+          <span>Flensburg</span>
+          <span>Germany</span>
+          <span>Est. 2025</span>
+        </div>
+        <div class="nav-items">
+          <div class="navH" id="navH1">
+            <a href="#intro" class="nav-link">
+              <span class="nav-item-num">01 —</span>
+              <span class="nav-item-text">HOME</span>
+              <span class="nav-item-arrow">↗</span>
+            </a>
+            <div class="nav-line"></div>
+            <div class="navImgWrapper" id="navImgWrapper1">
+              <video autoplay muted loop src="/sampleForBarclay4.mp4"></video>
+            </div>
+          </div>
+          <div class="navH" id="navH2">
+            <a href="#spotlight" class="nav-link">
+              <span class="nav-item-num">02 —</span>
+              <span class="nav-item-text">EVENTS</span>
+              <span class="nav-item-arrow">↗</span>
+            </a>
+            <div class="nav-line"></div>
+            <div class="navImgWrapper" id="navImgWrapper2">
+              <video autoplay muted loop src="/sampleForBarclay5.mp4"></video>
+            </div>
+          </div>
+          <div class="navH" id="navH3">
+            <a href="#location" class="nav-link">
+              <span class="nav-item-num">03 —</span>
+              <span class="nav-item-text">CONTACT</span>
+              <span class="nav-item-arrow">↗</span>
+            </a>
+            <div class="nav-line"></div>
+            <div class="navImgWrapper" id="navImgWrapper3">
+              <video autoplay muted loop src="/sampleForBarclay1.mp4"></video>
+            </div>
+          </div>
+        </div>
+        <div class="nav-time">
+          <span id="navClock">--:--:--</span>
+          <div class="nav-status-block">
+            <span class="nav-status-dot"></span>
+            <span class="nav-status-label">SYSTEM ONLINE</span>
+          </div>
+        </div>
+
+        <!-- Navbar Ticker (läuft am unteren Rand der Nav) -->
+        <div class="nav-ticker" aria-hidden="true">
+          <div class="nav-ticker-track">
+            <span>DOC50</span><span class="nt-sep">·</span>
+            <span>Flensburg</span><span class="nt-sep">·</span>
+            <span>Event Location</span><span class="nt-sep">·</span>
+            <span>Schiffbrücke 50</span><span class="nt-sep">·</span>
+            <span>Live Productions</span><span class="nt-sep">·</span>
+            <span>info@doc50.de</span><span class="nt-sep">·</span>
+            <span>DOC50</span><span class="nt-sep">·</span>
+            <span>Flensburg</span><span class="nt-sep">·</span>
+            <span>Event Location</span><span class="nt-sep">·</span>
+            <span>Schiffbrücke 50</span><span class="nt-sep">·</span>
+            <span>Live Productions</span><span class="nt-sep">·</span>
+            <span>info@doc50.de</span><span class="nt-sep">·</span>
+          </div>
+        </div>
+        <div class="nav-footer-info">
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95fcfbf3fad5f1faf6a0a5bbf1f0">[email&#160;protected]</a></span>
+          <span>+49 1767 1957983</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ─── Hero ────────────────────────────────────────────────────────────── -->
+    <section class="intro snap-section" id="intro">
+      <div class="section-1-img">
+        <img src="/doc50-concert-4.jpg" alt="" />
+      </div>
+
+      <div class="hero-title">
+        <span class="hero-doc-stroke">DOC</span>
+        <div class="hero-title-rule"></div>
+        <span class="hero-50-fill">50</span>
+        <span class="hero-since">EST. 2025</span>
+      </div>
+
+      <!-- Rotating badge -->
+      <div class="hero-badge">
+        <svg viewBox="0 0 120 120" class="hero-badge-ring">
+          <defs>
+            <path id="badgeCircle" d="M 60,60 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0"/>
+          </defs>
+          <text font-size="10.5" fill="rgba(255,255,255,0.45)" font-family="monospace" letter-spacing="3.2">
+            <textPath href="#badgeCircle">FLENSBURG · EVENT · LOCATION · 2025 ·&nbsp;</textPath>
+          </text>
+        </svg>
+        <span class="hero-badge-center">↓</span>
+      </div>
+
+      <!-- Scroll-Indikator -->
+      <div class="hero-scroll-line">
+        <div class="hero-scroll-line-inner"></div>
+      </div>
+
+      <div class="hero-sub">
+        <p>Event Location and Management</p>
+        <p>Live Productions</p>
+        <p>Since 2025</p>
+      </div>
+    </section>
+
+    <!-- ─── Events / Spotlight ──────────────────────────────────────────────── -->
+    <section class="spotlight snap-section" id="spotlight">
+
+      <!-- Datum oben links (JS steuert opacity + y) -->
+      <div class="project-index"><h2></h2></div>
+
+      <!-- Verbindungslinie Bild ↔ Titel (JS positioniert) -->
+      <div class="project-connector">
+        <div class="project-connector-line"></div>
+        <div class="project-connector-dot"></div>
+      </div>
+
+      <div class="project-images">
+        <div class="project-img" data-index="0"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">01 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="1"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">02 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="2"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">03 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="3"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">04 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="4"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">05 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="5"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">06 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="6"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">07 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="7"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">08 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="8"><img src="/doc50-concert-4.jpg" alt="" /></div>
+        <div class="project-divider"><span class="project-divider-num">09 — FLN · 2025</span><span class="project-divider-mark">✦</span></div>
+        <div class="project-img" data-index="9"><img src="/doc50-concert-4.jpg" alt="" /></div>
+      </div>
+
+      <!-- Titel: sicherer Abstand zum Burger oben -->
+      <div class="project-names">
+        <div class="project-name-item" data-index="0"><span class="proj-num">01</span><p>The Romantic Tour – Bruno Mars</p></div>
+        <div class="project-name-item" data-index="1"><span class="proj-num">02</span><p>Las Mujeres World Tour – Shakira</p></div>
+        <div class="project-name-item" data-index="2"><span class="proj-num">03</span><p>The Cloud 9 Tour – Megan Moroney</p></div>
+        <div class="project-name-item" data-index="3"><span class="proj-num">04</span><p>Loop Tour – Ed Sheeran</p></div>
+        <div class="project-name-item" data-index="4"><span class="proj-num">05</span><p>The Art of Loving Live – Olivia Dean</p></div>
+        <div class="project-name-item" data-index="5"><span class="proj-num">06</span><p>Stadion-Shows (UK) – Bad Bunny</p></div>
+        <div class="project-name-item" data-index="6"><span class="proj-num">07</span><p>Simple Plan 3OH!3 Tour</p></div>
+        <div class="project-name-item" data-index="7"><span class="proj-num">08</span><p>Jubiläumskonzert – Gianna Nannini</p></div>
+        <div class="project-name-item" data-index="8"><span class="proj-num">09</span><p>Jubiläums-Tour – Europe</p></div>
+        <div class="project-name-item" data-index="9"><span class="proj-num">10</span><p>Ye Live – Kanye West</p></div>
+      </div>
+    </section>
+
+    <!-- ─── Location ─────────────────────────────────────────────────────────── -->
+    <section class="location snap-section" id="location">
+      <div class="loc-city-bg"><h1>Flensburg</h1></div>
+
+      <div class="loc-img">
+        <img src="/doc50-concert-4.jpg" alt="DOC50 Venue" />
+      </div>
+
+      <div class="loc-details">
+        <p class="loc-name">DOC50</p>
+        <div class="loc-coords">54°46′N · 9°26′E</div>
+        <div class="loc-divider"></div>
+
+        <!-- Status + Kapazität -->
+        <div class="loc-status-row">
+          <span class="loc-status-dot"></span>
+          <span class="loc-status-text">VERFÜGBAR FÜR BUCHUNGEN</span>
+        </div>
+        <div class="loc-capacity-row">
+          <span class="loc-cap-label">Kapazität</span>
+          <span class="loc-cap-value">850 Gäste</span>
+        </div>
+        <a href="mailto:info@doc50.de" class="loc-cta">Anfrage senden ↗</a>
+
+        <p class="loc-section" style="margin-top:1.4rem;">Adresse</p>
+        <p class="loc-contact-tel">Schiffbrücke 50</p>
+        <p class="loc-contact-tel">24939 Flensburg</p>
+
+        <p class="loc-section" style="margin-top:1.2rem;">Kontakt</p>
+        <p class="loc-contact-Name">Max Mustermann</p>
+        <p class="loc-contact-mail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cea7a0a8a18eaaa1adfbfee0aaab">[email&#160;protected]</a></p>
+        <p class="loc-contact-tel">+49 1767 1957983</p>
+      </div>
+    </section>
+
+    <!-- ─── Footer ───────────────────────────────────────────────────────────── -->
+    <footer class="site-footer snap-section" id="footer">
+      <div class="footer-bg-text">DOC50</div>
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="footer-logo">DOC50</p>
+          <p class="footer-tagline">Event Location &amp; Management<br/>Live Productions · Flensburg</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Navigation</p>
+          <nav class="footer-nav">
+            <a href="#intro"     class="nav-link">Home</a>
+            <a href="#spotlight" class="nav-link">Events</a>
+            <a href="#location"  class="nav-link">Location</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Kontakt</p>
+          <p class="footer-detail">Max Mustermann</p>
+          <p class="footer-detail">Schiffbrücke 50</p>
+          <p class="footer-detail">24939 Flensburg</p>
+          <p class="footer-detail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5dcdbd3daf5d1dad680859bd1d0">[email&#160;protected]</a></p>
+          <p class="footer-detail">+49 1767 1957983</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Impressum</p>
+          <p class="footer-detail">Angaben gemäß §5 TMG</p>
+          <p class="footer-detail">Max Mustermann</p>
+          <p class="footer-detail">Schiffbrücke 50, 24939 Flensburg</p>
+          <div class="footer-divider"></div>
+          <p class="foooter-detail">Verantwortlich i.S.d. §55 Abs. 2 RStV:<br/>Max Mustermann</p>
+        </div>
+      </div>
+
+      <!-- Marquee Ticker -->
+      <div class="footer-ticker" aria-hidden="true">
+        <div class="footer-ticker-track">
+          <span>DOC50</span><span class="ft-sep">✦</span>
+          <span>Flensburg</span><span class="ft-sep">✦</span>
+          <span>Event Location</span><span class="ft-sep">✦</span>
+          <span>Live Productions</span><span class="ft-sep">✦</span>
+          <span>Schiffbrücke 50</span><span class="ft-sep">✦</span>
+          <span>Est. 2025</span><span class="ft-sep">✦</span>
+          <span>DOC50</span><span class="ft-sep">✦</span>
+          <span>Flensburg</span><span class="ft-sep">✦</span>
+          <span>Event Location</span><span class="ft-sep">✦</span>
+          <span>Live Productions</span><span class="ft-sep">✦</span>
+          <span>Schiffbrücke 50</span><span class="ft-sep">✦</span>
+          <span>Est. 2025</span><span class="ft-sep">✦</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 DOC50 Eventlocation · Alle Rechte vorbehalten</p>
+        <div class="footer-bottom-social">
+          <a href="#" class="footer-social-link">Instagram</a>
+          <span class="footer-social-sep">·</span>
+          <a href="#" class="footer-social-link">Facebook</a>
+          <span class="footer-social-sep">·</span>
+          <a href="mailto:info@doc50.de" class="footer-social-link">E-Mail</a>
+        </div>
+        <p>Datenschutz · Impressum</p>
+      </div>
+    </footer>
+
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>
