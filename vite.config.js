@@ -10,4 +10,5 @@ export default defineConfig({
       },
     },
   },
+  base:'Demo1.1',
 });
