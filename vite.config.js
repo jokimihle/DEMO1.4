@@ -10,5 +10,5 @@ export default defineConfig({
       },
     },
   },
-  base: "/DEMO1.4/",
+  base: "/DOC50.2.J/",
 });
