@@ -7,16 +7,46 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 // ─── Event-Daten ─────────────────────────────────────────────────────────────
 const eventData = [
-  { artist: "Bruno Mars",     title: "The Romantic Tour",          date: "12.04.2026", location: "Flensburg", category: "Pop / R&B",      desc: "Eine unvergessliche Nacht mit dem King of Pop-Soul.",          hasTicket: true,  ticketUrl: "#" },
-  { artist: "Shakira",        title: "Las Mujeres World Tour",     date: "28.05.2026", location: "Hamburg",   category: "Pop / Latin",     desc: "Weltklasse-Entertainment und kolumbianische Energie.",         hasTicket: true,  ticketUrl: "#" },
-  { artist: "Megan Moroney",  title: "The Cloud 9 Tour",           date: "14.06.2026", location: "Berlin",    category: "Country",         desc: "Country-Sound aus Nashville live in Deutschland.",             hasTicket: false, ticketUrl: "" },
-  { artist: "Ed Sheeran",     title: "Loop Tour",                  date: "03.07.2026", location: "Kiel",      category: "Pop / Folk",      desc: "Der britische Songwriter und seine Loop-Magie live.",          hasTicket: true,  ticketUrl: "#" },
-  { artist: "Olivia Dean",    title: "The Art of Loving Live",     date: "19.07.2026", location: "Flensburg", category: "Soul / Pop",      desc: "Britische Soul-Musik mit warmem Groove und tiefer Emotion.",  hasTicket: true,  ticketUrl: "#" },
-  { artist: "Bad Bunny",      title: "Stadion-Shows (UK)",         date: "02.08.2026", location: "Hamburg",   category: "Latin / Trap",    desc: "Der Reggaeton-König bringt seine Stadium-Show nach Deutschland.", hasTicket: true, ticketUrl: "#" },
-  { artist: "Simple Plan & 3OH!3", title: "Simple Plan 3OH!3 Tour", date: "16.08.2026", location: "Flensburg", category: "Rock / Pop-Punk", desc: "Zwei Kultbands der 2000er auf einer gemeinsamen Tour.",       hasTicket: true,  ticketUrl: "#" },
-  { artist: "Gianna Nannini", title: "Jubiläumskonzert",           date: "05.09.2026", location: "Kiel",      category: "Pop / Rock",      desc: "50 Jahre Rocklegende – die Italienerin feiert ihr Bühnenjubiläum.", hasTicket: false, ticketUrl: "" },
-  { artist: "Europe",         title: "Jubiläums-Tour",             date: "20.09.2026", location: "Kiel",      category: "Rock",            desc: "Die schwedischen Rock-Ikonen mit Klassikern wie 'The Final Countdown'.", hasTicket: true, ticketUrl: "#" },
-  { artist: "Kanye West",     title: "Ye Live",                    date: "10.10.2026", location: "Hamburg",   category: "Hip-Hop",         desc: "Das kontroverse Genie präsentiert sein neuestes Album live.", hasTicket: true,  ticketUrl: "#" },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: false, ticketUrl: "",
+    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesentium voluptatum deleniti atque corrupti quos dolores quas molestias excepturi sint occaecati cupiditate non provident."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: false, ticketUrl: "",
+    desc: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+  },
+  {
+    artist: "(Sample Artist)", title: "(Sample Tour Name)", date: "00.00.0000", location: "(Sample City)", category: "(Sample Genre)", hasTicket: true, ticketUrl: "/Impressum.html",
+    desc: "Temporibus autem quibusdam et aut officiis debitis rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur."
+  },
 ];
 
 // ─── Lenis initialisieren (außerhalb von load, damit es früh verfügbar ist) ──
@@ -266,49 +296,6 @@ window.addEventListener("load", () => {
         gsap.set(titleEl, { clipPath: "inset(0 0 100% 0)", opacity: 0 });
       });
 
-      // ─── Badge-Button an jedem Projektbild ───────────────────────────────
-      projectImgs.forEach((imgEl) => {
-        const badge = document.createElement("div");
-        badge.className = "project-img-badge";
-        badge.innerHTML = `
-          <svg viewBox="0 0 80 80" class="project-badge-ring">
-            <defs>
-              <path id="badgeCircleProj" d="M 40,40 m -28,0 a 28,28 0 1,1 56,0 a 28,28 0 1,1 -56,0"/>
-            </defs>
-            <text font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="monospace" letter-spacing="2.8">
-              <textPath href="#badgeCircleProj">VIEW · EVENT · INFO ·&nbsp;</textPath>
-            </text>
-          </svg>
-          <span class="project-badge-center">↗</span>
-        `;
-        imgEl.appendChild(badge);
-
-        // ─── Badge-Ring: langsame Dauerdrehung ───────────────────────────────
-        const ring = badge.querySelector(".project-badge-ring");
-        const center = badge.querySelector(".project-badge-center");
-        // Dauerdrehung bei normaler Geschwindigkeit
-        const ringTween = gsap.to(ring, {
-          rotation: 360, duration: 18, ease: "none", repeat: -1, transformOrigin: "50% 50%",
-        });
-
-        // ─── Hover: beschleunigen, Skalierung, cursor-Feedback ───────────────
-        badge.style.cursor = "pointer";
-        badge.addEventListener("mouseenter", () => {
-          gsap.to(badge, { scale: 1.14, duration: 0.35, ease: "power2.out" });
-          gsap.to(center, { scale: 1.25, opacity: 1, duration: 0.3, ease: "power2.out" });
-          ringTween.timeScale(3.5); // Ring dreht sich schneller
-          // Custom-Cursor vergrößern
-          const cur = document.querySelector(".cursor");
-          if (cur) gsap.to(cur, { scale: 3.5, duration: 0.3, ease: "power2.out" });
-        });
-        badge.addEventListener("mouseleave", () => {
-          gsap.to(badge, { scale: 1, duration: 0.4, ease: "power2.out" });
-          gsap.to(center, { scale: 1, opacity: 0.9, duration: 0.35, ease: "power2.out" });
-          ringTween.timeScale(1); // zurück zur normalen Geschwindigkeit
-          const cur = document.querySelector(".cursor");
-          if (cur) gsap.to(cur, { scale: 1, duration: 0.3, ease: "power2.out" });
-        });
-      });
       let lastScrollDir = 1; // 1 = nach unten, -1 = nach oben
 
       function updateDividerTitles(N, scrollDir) {
@@ -462,7 +449,8 @@ window.addEventListener("load", () => {
           projectImgs.forEach((img) => {
             const r = img.getBoundingClientRect();
             const filteredOut = window._activeLocFilter && window._activeLocFilter !== "ALL" && img.dataset.location !== window._activeLocFilter;
-            const isCenter = r.top <= mid && r.bottom >= mid;
+            const zone = VH * 0.28;
+            const isCenter = r.top <= mid + zone && r.bottom >= mid - zone;
             gsap.set(img, { opacity: filteredOut ? 0.06 : (isCenter ? 1 : 0.35) });
           });
 
@@ -515,7 +503,7 @@ window.addEventListener("load", () => {
   }
 
   // ─── Section Snap ────────────────────────────────────────────────────────
-  const snapSections = Array.from(document.querySelectorAll(".snap-section:not(.spotlight)"));
+  const snapSections = Array.from(document.querySelectorAll(".snap-section"));
   let snapTimer  = null;
   let isSnapping = false;
 
@@ -523,7 +511,7 @@ window.addEventListener("load", () => {
     if (isSnapping) return;
     clearTimeout(snapTimer);
     snapTimer = setTimeout(() => {
-      const threshold = window.innerHeight * 0.25;
+      const threshold = window.innerHeight * 0.20;
       let snapTarget = null, minDist = Infinity;
       snapSections.forEach((section) => {
         const rect = section.getBoundingClientRect();
@@ -532,12 +520,14 @@ window.addEventListener("load", () => {
       });
       if (snapTarget && minDist > 2) {
         isSnapping = true;
-        lenis.scrollTo(snapTarget, {
-          duration: 0.8, easing: (t) => 1 - Math.pow(1 - t, 4),
+        const exactTop = snapTarget.getBoundingClientRect().top + window.scrollY;
+        lenis.scrollTo(exactTop, {
+          duration: 0.55,
+          easing: (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2,
           onComplete: () => { isSnapping = false; },
         });
       }
-    }, 120);
+    }, 80);
   });
 
   // ─── Navbar ──────────────────────────────────────────────────────────────
@@ -633,205 +623,106 @@ window.addEventListener("load", () => {
     el.addEventListener("mouseleave", () => gsap.to(cursor, { scale: 1, duration: 0.3, ease: "power2.out" }));
   });
 
-  // ─── Inline Info-Cards ─────────────────────────────────────────────────────
-  const infoCards = Array.from(document.querySelectorAll(".project-info-card"));
+  // ─── Side Panel ───────────────────────────────────────────────────────────
   let openCardIdx = -1;
-  const CARD_VH   = window.innerHeight * 0.50; // 50vh
+  const espPanel   = document.getElementById("eventSidePanel");
+  const espContent = document.getElementById("espContent");
+  const espClose   = document.getElementById("espClose");
+  const espBdrop   = document.getElementById("espBackdrop");
 
-  function buildCardInner(idx) {
-    const ev = eventData[idx];
+  function buildPanelContent(idx) {
+    const ev  = eventData[idx];
     if (!ev) return "";
-    const num = String(idx + 1).padStart(2, "0");
+    const num     = String(idx + 1).padStart(2, "0");
+    const imgSrc  = document.querySelector(`.project-img[data-index="${idx}"] img`)?.src || "";
+    const dateParts = ev.date.split(".");
+    const dateDisplay = dateParts.length === 3
+      ? `${dateParts[0]} — ${dateParts[1]} — ${dateParts[2]}`
+      : ev.date;
     const ticketBtn = ev.hasTicket
-      ? `<a href="${ev.ticketUrl}" class="edc-btn edc-btn-ticket" target="_blank">Tickets ↗</a>`
+      ? `<a href="${ev.ticketUrl}" class="esp-ticket" target="_blank"><span>Tickets kaufen</span><span class="esp-ticket-arrow">↗</span></a>`
       : "";
     return `
-      <div class="project-info-card-inner">
-        <!-- Schließen + Ticket oben rechts -->
-        <div class="edc-top-right">
+      <img src="${imgSrc}" class="esp-bg-img" alt="" aria-hidden="true" />
+      <div class="esp-left">
+        <div class="esp-vline" aria-hidden="true"></div>
+        <p class="esp-num">${num} — ${ev.category}</p>
+        <p class="esp-artist">${ev.artist}</p>
+        <h2 class="esp-title">${ev.title}</h2>
+        <div class="esp-rule">
+          <span class="esp-rule-dot"></span>
+          <span class="esp-rule-line"></span>
+          <span class="esp-rule-dot"></span>
+        </div>
+        <div class="esp-date">${dateDisplay}</div>
+        <div class="esp-location">
+          <span class="esp-loc-label">Location</span>
+          <span class="esp-loc-val">${ev.location}</span>
+        </div>
+        <p class="esp-desc">${ev.desc}</p>
+        <div class="esp-actions">
           ${ticketBtn}
-          <button class="edc-close pic-close" data-index="${idx}">✕</button>
-        </div>
-
-        <!-- HEADER: Künstler + Titel oben links -->
-        <div class="edc-header">
-          <p class="edc-num">${num} — ${ev.category}</p>
-          <p class="edc-artist">${ev.artist}</p>
-          <h2 class="edc-title">${ev.title}</h2>
-        </div>
-
-        <!-- BODY: Bilder links | Text rechts -->
-        <div class="edc-body">
-          <div class="edc-visuals">
-            <div class="edc-img-a"></div>
-            <div class="edc-img-b"></div>
-          </div>
-          <div class="edc-content">
-            <div class="edc-text-block">
-              <p class="edc-desc">${ev.desc}</p>
-              <p class="edc-desc edc-desc-sub">DOCK50 präsentiert – Live in Flensburg. Einlass ab 19:00 Uhr, Konzertbeginn 21:00 Uhr.</p>
-            </div>
-            <div class="edc-bottom-row">
-              <div class="edc-tags">
-                <span class="edc-tag">${ev.date}</span>
-                <span class="edc-tag">${ev.location}</span>
-              </div>
-              <a href="#" class="edc-btn edc-btn-info">↗ weitere Infos</a>
-            </div>
-          </div>
+          <a href="#" class="esp-info">↗ weitere Infos</a>
         </div>
       </div>`;
   }
 
-  // ─── ScrollTrigger-Instanz merken um progress abzufragen ─────────────────
-  let spotST = null;
-
-  function getSpotProgress() {
-    if (spotST) return spotST.progress;
-    const st = ScrollTrigger.getAll().find(t => t.trigger === document.querySelector(".spotlight"));
-    if (st) spotST = st;
-    return st ? st.progress : 0;
-  }
-
   function openCard(idx) {
-    if (openCardIdx === idx) return; // schon offen
-    if (openCardIdx !== -1) closeCard(false); // vorherige schließen (ohne anim-wait)
-
-    const card = infoCards[idx];
-    const P    = getSpotProgress();
-
-    card.innerHTML = buildCardInner(idx);
-    card.querySelector(".pic-close").addEventListener("click", () => closeCard(true));
-
-    // Viewport-Verschiebung: aktives Bild + Card so verschieben, dass
-    // Abstand oben (Bild-Oberkante → Viewport-Top) = Abstand unten (Card-Unterkante → Viewport-Bottom)
-    const Y_initial = P * moveDistanceImages + moveDistanceOffset;
-    const activeImgEl = document.querySelector(`.project-img[data-index="${idx}"]`);
-    const imgRect = activeImgEl?.getBoundingClientRect();
-    const VH_now  = window.innerHeight;
-    // Exakte Verschiebung: (Bild-Oberkante + Card/2) - (VH/2 - imgH/2)
-    // → Bild soll so stehen, dass Mitte von (Bild+Card) bei VH/2 liegt
-    const imgH    = imgRect ? imgRect.height : CARD_VH;
-    const actualShift = imgRect
-      ? imgRect.top - (VH_now - imgH - CARD_VH) / 2
-      : CARD_VH / 2;
-
-    gsap.fromTo(card, { height: 0 }, {
-      height: CARD_VH,
-      duration: 0.65,
-      ease: "expo.out",
-      onUpdate() {
-        if (!_projectImagesContainer) return;
-        const tweenProg = this.progress();
-        moveDistanceImages = VH_now - _projectImagesContainer.offsetHeight;
-        const targetY = Y_initial - actualShift * tweenProg;
-        moveDistanceOffset = targetY - P * moveDistanceImages;
-        gsap.set(_projectImagesContainer, { y: targetY });
-      },
-    });
-
-    // Inhalt einblenden (leicht nach oben gleiten)
-    const inner = card.querySelector(".project-info-card-inner");
-    if (inner) {
-      gsap.fromTo(inner, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out", delay: 0.18 });
-    }
-
+    if (openCardIdx === idx) return;
     openCardIdx = idx;
 
-    // ─── Container hochziehen damit Card über fixed Elementen liegt ─────────
-    if (_projectImagesContainer) gsap.set(_projectImagesContainer, { zIndex: 20 });
+    espContent.innerHTML = buildPanelContent(idx);
+    espPanel.setAttribute("aria-hidden", "false");
 
-    // ─── Titel-Items und Datum wegschieben ────────────────────────────────
-    document.querySelectorAll(".project-name-item").forEach(item => {
-      gsap.to(item, { opacity: 0, x: 28, duration: 0.28, ease: "power2.in" });
-    });
+    gsap.set(espPanel, { x: "100%" });
+    gsap.to(espPanel, { x: "0%", duration: 0.38, ease: "expo.out" });
+    gsap.to(espBdrop, { opacity: 1, duration: 0.25, ease: "power2.out", pointerEvents: "all" });
+
+    gsap.fromTo(espContent.querySelector(".esp-bg-img"),
+      { opacity: 0 },
+      { opacity: 1, duration: 0.8, ease: "power2.out", delay: 0.05 }
+    );
+    const els = espContent.querySelectorAll(".esp-num, .esp-artist, .esp-title, .esp-rule, .esp-date, .esp-location, .esp-desc, .esp-actions");
+    gsap.fromTo(els,
+      { opacity: 0, y: 12 },
+      { opacity: 1, y: 0, duration: 0.26, stagger: 0.045, ease: "power2.out", delay: 0.18 }
+    );
+
+    document.querySelectorAll(".project-name-item").forEach(item =>
+      gsap.to(item, { opacity: 0, x: 28, duration: 0.22, ease: "power2.in" })
+    );
     const projectIndexEl = document.querySelector(".project-index");
-    if (projectIndexEl) gsap.to(projectIndexEl, { opacity: 0, x: -28, duration: 0.28, ease: "power2.in" });
-    const connectors = document.querySelectorAll(".project-connector");
-    connectors.forEach(c => gsap.to(c, { opacity: 0, duration: 0.2 }));
-
-    // ─── Aktives Bild hervorheben ─────────────────────────────────────────
-    const imgEl = document.querySelector(`.project-img[data-index="${idx}"]`);
-    if (imgEl) {
-      gsap.to(imgEl, { outline: "1px solid rgba(255,255,255,0.35)", duration: 0.3 });
-    }
+    if (projectIndexEl) gsap.to(projectIndexEl, { opacity: 0, x: -28, duration: 0.22, ease: "power2.in" });
+    document.querySelectorAll(".project-connector").forEach(c => gsap.to(c, { opacity: 0, duration: 0.15 }));
   }
 
   function closeCard(animate = true) {
     if (openCardIdx === -1) return;
-    const idx  = openCardIdx;
-    const card = infoCards[idx];
-    const P    = getSpotProgress();
     openCardIdx = -1;
-
-    // Beim Schließen: Viewport-Verschiebung umkehren
-    // Die Verschiebung beim Öffnen war "actualShift" – beim Schließen gleiche Distanz zurück.
-    // Da wir die beim Öffnen gemessene Distanz nicht mehr haben, messen wir neu:
-    // Aktuell sitzen wir bei Y_initial_close (= nach Verschiebung beim Öffnen).
-    // Der ursprüngliche Y war Y_initial_close + actualShift_close.
-    const Y_initial_close = P * moveDistanceImages + moveDistanceOffset;
-    // Erneut messen: Bild ist jetzt verschoben, reverse-Shift aus aktueller Position berechnen
-    const closeImgEl   = document.querySelector(`.project-img[data-index="${idx}"]`);
-    const closeImgRect = closeImgEl?.getBoundingClientRect();
-    const VH_close     = window.innerHeight;
-    const closeImgH    = closeImgRect ? closeImgRect.height : CARD_VH;
-    // Ziel beim Schließen: Bild wieder bei VH/2 zentrieren (ohne Card)
-    const closeTargetImgTop = VH_close / 2 - closeImgH / 2;
-    const closeShift = closeImgRect ? closeImgRect.top - closeTargetImgTop : CARD_VH / 2;
-    const Y_restored = Y_initial_close - closeShift; // Container muss nach unten (weniger negativ)
-
-    const doClose = () => { card.innerHTML = ""; };
+    espPanel.setAttribute("aria-hidden", "true");
 
     if (animate) {
-      const inner = card.querySelector(".project-info-card-inner");
-      if (inner) {
-        gsap.to(inner, { y: -12, opacity: 0, duration: 0.2, ease: "power2.in" });
-      }
-      gsap.to(card, {
-        height: 0, duration: 0.5, ease: "expo.in", delay: 0.1,
-        onUpdate() {
-          if (!_projectImagesContainer) return;
-          const tweenProg = this.progress();
-          moveDistanceImages = VH_close - _projectImagesContainer.offsetHeight;
-          const targetY = Y_initial_close + (-closeShift) * tweenProg;
-          moveDistanceOffset = targetY - P * moveDistanceImages;
-          gsap.set(_projectImagesContainer, { y: targetY });
-        },
-        onComplete: doClose,
-      });
+      gsap.to(espPanel, { x: "100%", duration: 0.28, ease: "expo.in" });
+      gsap.to(espBdrop, { opacity: 0, duration: 0.2, ease: "power2.in", pointerEvents: "none" });
     } else {
-      gsap.set(card, { height: 0 });
-      if (_projectImagesContainer) {
-        moveDistanceImages = VH_close - _projectImagesContainer.offsetHeight;
-        const instantY = Y_initial_close + (-closeShift);
-        moveDistanceOffset = instantY - P * moveDistanceImages;
-        gsap.set(_projectImagesContainer, { y: instantY });
-      }
-      doClose();
+      gsap.set(espPanel, { x: "100%" });
+      gsap.set(espBdrop, { opacity: 0, pointerEvents: "none" });
     }
 
-    // ─── Container wieder auf normalen z-index ────────────────────────────
-    if (_projectImagesContainer) gsap.set(_projectImagesContainer, { zIndex: 0 });
-
-    // ─── Titel, Datum und Connectors zurückschieben ───────────────────────
-    document.querySelectorAll(".project-name-item").forEach(item => {
-      gsap.to(item, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out", delay: animate ? 0.3 : 0 });
-    });
+    document.querySelectorAll(".project-name-item").forEach(item =>
+      gsap.to(item, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out", delay: animate ? 0.1 : 0 })
+    );
     const projectIndexEl2 = document.querySelector(".project-index");
-    if (projectIndexEl2) gsap.to(projectIndexEl2, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out", delay: animate ? 0.3 : 0 });
-    // Connectors: Sichtbarkeit wird beim nächsten onUpdate neu gesetzt → kurz warten
+    if (projectIndexEl2) gsap.to(projectIndexEl2, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out", delay: animate ? 0.1 : 0 });
     setTimeout(() => {
       document.querySelectorAll(".project-connector").forEach(c => gsap.set(c, { clearProps: "opacity" }));
-    }, animate ? 450 : 0);
-
-    // ─── Bild-Hervorhebung zurücksetzen ───────────────────────────────────
-    const imgEl = document.querySelector(`.project-img[data-index="${idx}"]`);
-    if (imgEl) {
-      gsap.to(imgEl, { outline: "none", duration: 0.2 });
-    }
+    }, animate ? 260 : 0);
   }
 
-  // Klick auf Bild oder Info-Button öffnet Card
+  espClose.addEventListener("click", () => closeCard(true));
+  espBdrop.addEventListener("click", () => closeCard(true));
+
+  // Klick auf Bild öffnet/schließt Panel
   document.querySelectorAll(".project-img").forEach((imgEl) => {
     imgEl.style.cursor = "pointer";
     imgEl.addEventListener("click", () => {
@@ -842,6 +733,16 @@ window.addEventListener("load", () => {
   });
 
   // calibrateExtLines entfernt – divider-ext-left/right werden nicht mehr verwendet.
+
+  // ─── Klick auf Titel-Item öffnet Panel ───────────────────────────────────
+  document.querySelectorAll(".project-name-item").forEach((item) => {
+    item.style.cursor = "pointer";
+    item.addEventListener("click", () => {
+      const idx = parseInt(item.dataset.index, 10);
+      if (openCardIdx === idx) closeCard(true);
+      else openCard(idx);
+    });
+  });
 
   // ─── Info-Button rechts ────────────────────────────────────────────────────
   const infoBtn = document.getElementById("eventInfoBtn");
@@ -916,5 +817,149 @@ window.addEventListener("load", () => {
   });
 
   window._activeLocFilter = "ALL";
+
+  // ─── Venue Section Animation ─────────────────────────────────────────────
+  const venueSection = document.getElementById("location");
+  if (venueSection) {
+    const svg     = venueSection.querySelector(".floorplan-svg");
+    const stats   = venueSection.querySelectorAll(".venue-stat");
+    const header  = venueSection.querySelector(".venue-header");
+    const bottom  = venueSection.querySelector(".venue-bottom-bar");
+    const corners = venueSection.querySelectorAll(".fp-corner");
+
+    // SVG fade + scale in
+    if (svg) {
+      gsap.fromTo(svg,
+        { opacity: 0, scale: 0.97, transformOrigin: "50% 50%" },
+        { opacity: 1, scale: 1, duration: 1.1, ease: "power3.out",
+          scrollTrigger: { trigger: venueSection, start: "top 80%", once: true } }
+      );
+    }
+
+    // Eckmarken einblenden
+    gsap.to(corners, {
+      opacity: 1, duration: 0.8, stagger: 0.12, ease: "power2.out",
+      scrollTrigger: { trigger: venueSection, start: "top 75%", once: true },
+    });
+
+
+    // Header + bottom bar slide in
+    gsap.fromTo([header, bottom],
+      { opacity: 0, y: 18 },
+      { opacity: 1, y: 0, duration: 0.6, stagger: 0.15, ease: "power3.out",
+        scrollTrigger: { trigger: venueSection, start: "top 80%", once: true } }
+    );
+
+    // Corner stats: count-up, jedes Mal wenn Section sichtbar wird
+    const dirs = { "vs-tl": -22, "vs-bl": -22, "vs-tr": 22, "vs-br": 22 };
+    ScrollTrigger.create({
+      trigger: venueSection,
+      start: "top 75%",
+      end: "bottom top",
+      onEnter:     () => runCountUp(),
+      onEnterBack: () => runCountUp(),
+      onLeave:     () => resetStats(),
+      onLeaveBack: () => resetStats(),
+    });
+
+    function runCountUp() {
+      stats.forEach((block, i) => {
+        const cls   = [...block.classList].find(c => dirs[c] !== undefined);
+        const xFrom = cls ? dirs[cls] : 0;
+        const el    = block.querySelector(".vsb-value");
+        const target = parseInt(el.dataset.target, 10);
+        const obj   = { val: 0 };
+        gsap.fromTo(block,
+          { opacity: 0, x: xFrom },
+          { opacity: 1, x: 0, duration: 0.7, ease: "power3.out", delay: i * 0.08 }
+        );
+        gsap.to(obj, {
+          val: target, duration: 1.6, ease: "power2.out", delay: i * 0.08,
+          onUpdate() { el.textContent = Math.round(obj.val).toLocaleString("de-DE"); },
+        });
+      });
+    }
+
+    function resetStats() {
+      stats.forEach(block => {
+        gsap.set(block, { opacity: 0 });
+        const el = block.querySelector(".vsb-value");
+        el.textContent = "0";
+      });
+    }
+  }
+
+// ─── Floorplan Room Hover Cards ──────────────────────────────────────────────
+(function () {
+  const rooms = {
+    "Hauptsaal": {
+      type: "info",
+      items: ["Bis zu 600 Personen", "Große Hauptbühne", "Professionelle Licht- & Tonanlage", "Klimatisiert"],
+    },
+    "Bühne": {
+      type: "info",
+      items: ["Großzügige Bühnenfläche", "Vollständig beleuchtet", "Professionelles Equipment", "Rampe zum Hauptsaal"],
+    },
+    "Backstage": {
+      type: "info",
+      items: ["3 Künstlerkabinen", "Catering-Station", "Eigene Dusche & Lounge", "Direktzugang Bühne"],
+    },
+    "Produktion": {
+      type: "info",
+      items: ["Ton- & Lichtregie", "Zentraler Technikbereich", "Streaming-fähig", "Direktsicht zur Bühne"],
+    },
+    "Bar": {
+      type: "bar",
+      items: [
+        { label: "Dock50 Sour", price: "9 €" },
+        { label: "Draft Beer", price: "4 €" },
+        { label: "Wein & Sekt", price: "6 €" },
+        { label: "Signature Cocktail", price: "11 €" },
+        { label: "Softdrinks", price: "3 €" },
+      ],
+    },
+    "VIP Lounge": {
+      type: "info",
+      items: ["Bis zu 80 Personen", "Exklusiver Bereich", "Eigener Barservice", "Direkte Bühnensicht"],
+    },
+  };
+
+  const card = document.createElement("div");
+  card.className = "fp-card";
+  document.body.appendChild(card);
+
+  function buildCard(name) {
+    const data = rooms[name];
+    if (!data) return;
+    const isBar = data.type === "bar";
+    const isMenu = data.type === "menu";
+    card.className = "fp-card" + (isBar ? " fp-card--bar" : isMenu ? " fp-card--menu" : "");
+    let html = `<div class="fp-card-title">${isBar ? "Getränkekarte" : name}</div>`;
+    data.items.forEach(item => {
+      if (typeof item === "string") {
+        html += `<div class="fp-card-item">${item}</div>`;
+      } else if (isBar) {
+        html += `<div class="fp-card-item"><span>${item.label}</span><span class="fp-card-leader"></span><span class="fp-card-price">${item.price}</span></div>`;
+      } else {
+        html += `<div class="fp-card-item"><span>${item.label}</span><span class="fp-card-price">${item.price}</span></div>`;
+      }
+    });
+    card.innerHTML = html;
+  }
+
+  document.querySelectorAll(".fp-room").forEach(room => {
+    room.addEventListener("mouseenter", () => {
+      buildCard(room.dataset.room);
+      card.classList.add("fp-card--visible");
+    });
+    room.addEventListener("mousemove", e => {
+      card.style.left = (e.clientX + 20) + "px";
+      card.style.top  = (e.clientY - 20) + "px";
+    });
+    room.addEventListener("mouseleave", () => {
+      card.classList.remove("fp-card--visible");
+    });
+  });
+})();
 
 }); // end window.load
